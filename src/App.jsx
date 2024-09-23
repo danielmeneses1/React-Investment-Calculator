@@ -17,7 +17,7 @@ function App() {
     setUserInput(prevUserInput => {
       return {
         ...prevUserInput, // Spread the previous state
-        [inputIdentifier]: newValue // Update the specific field with new value
+        [inputIdentifier]: +newValue // Update the specific field with new value
       };
     });
   };
