@@ -4,14 +4,7 @@ import { useEffect} from "react"
 
 export default function UserInput({ onChange, userInput}) {
     
-    useEffect(() => {
-        console.log("Initial Investment: ", userInput.initialInvestment);
-        console.log("Annual Investment: ", userInput.annualInvestment);
-        console.log("Expected Return: ", userInput.expectedReturn);
-        console.log("Duration: ", userInput.duration);
-    }, [userInput]); // Executa sempre que userInput mudar
 
-    
     return <section id="user-input">
         <div className="input-group">
             <p>
